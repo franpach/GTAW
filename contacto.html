@@ -1,36 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+	<meta charset="utf-8">
 	<title>Contacto</title>
+	<meta name="contacto" content="página de contacto">
 </head>
 <body>
+	<h1> Contacto </h1>
+	<fieldset>
+		<nav>
+			<p>
+				Navegación
+			</p>
+			<ul>
+				<li><a href = "index.html"> index </a> </li>
+				<li><a href = "detalles.html"> detalles </a> </li>
+				<li><a href = "miembros.html"> miembros </a> </li>
+				<li><a href = "contacto.html"> contacto </a> </li>
+			</ul>
+		</nav>
+	</fieldset>
+	<p>
 	<form action="mailto: javrom01@ucm.es" method="post" enctype="text/plain">
-	Nombre <input type="text" name="nombre" size="30" maxlength="100">
-	<br>
-	Dirección de email de contacto <input type="text" name="email" size="25" maxlength="100" value="@">
-	<br>
-	Motivo de consulta
-	<br>
-	<input type="radio" name="consulta" value="Evaluación" checked> Evaluación
-	<br>
-	<input type="radio" name="consulta" value="Sugerencias"> Sugerencias
-	<br>
-	<input type="radio" name="consulta" value="Críticas"> Críticas
-	<br>
-	<br>
-	<input type="checkbox" name="términos_servicios" > Marque esta casilla para verificar que ha leído nuestros términos y condiciones de servicio.
-	<br>
-	<br>
-	Consulta a realizar
-	<br>
-	<textarea cols="30" rows="7" name="consulta"></textarea>
-	<br>
+		Nombre <input type="text" name="nombre" size="30" maxlength="100">
+		<br>
+		Dirección de email de contacto <input type="text" name="email" size="25" maxlength="100" value="@">
+		<br>
+		Motivo de consulta
+		<br>
+		<input type="radio" name="consulta" value="Evaluación" checked> Evaluación
+		<br>
+		<input type="radio" name="consulta" value="Sugerencias"> Sugerencias
+		<br>
+		<input type="radio" name="consulta" value="Críticas"> Críticas
+		<br>
+		<br>
+		<input type="checkbox" name="términos_servicios" > Marque esta casilla para verificar que ha leído nuestros términos y condiciones de servicio.
+		<br>
+		<br>
+		Consulta a realizar
+		<br>
+		<textarea cols="30" rows="7" name="consulta"></textarea>
+		<br>
 
-	<br>
-	<input type="submit" value="Enviar formulario">
-	<br>
-	<br>
-	<input type="Reset" value="Borrar todo">
+		<br>
+		<input type="submit" value="Enviar formulario">
+		<br>
+		<br>
+		<input type="Reset" value="Borrar todo">
 	</form>
+	</p>
 </body>
+<footer>
+	Proyecto GTAW, de la asignatura AW del grado de Ingeniería Informática impartido en la UCM.
+</footer>
 </html>
