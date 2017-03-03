@@ -1,38 +1,109 @@
 <!DOCTYPE html>
-<html> 
-	<head>
+<html lang="es"> 
+<head>
+	<meta charset="utf-8">
+	<title>bocetos</title>
+	<meta name="bocetos" content="estructura visual de la página y sus secciones">
+</head>
+<body>
 	<h1> Bocetos </h1>
-	</head>
-
-	<body>
-	<p>Pagina Principal: Tenemos tres secciones a destacar, la primera sería la barra del usuario,
-	la segunda contiene el título y logotipo de la web con una barra que enlaza a diferentes contenidos
-	de la web, y por último 3 secciones con apartados diferentes(opiniones, análisis, y mejoresValorados).</p>
+	<fieldset>
+		<nav>
+			<p>
+				Navegación
+			</p>
+			<ul>
+				<li><a href="index.html"> index </a> </li>
+				<li><a href="detalles.html"> detalles </a> </li>
+				<li><a href="miembros.html"> miembros </a> </li>
+				<li><a href="contacto.html"> contacto </a> </li>
+				<li><a href="planificacion.html"> planificación </a> </li>	
+				<li><a href="bocetos.html"> bocetos </a> </li>
+			</ul>
+		</nav>
+	</fieldset>
+	<h3> Página principal </h3>
+	<p>
+		Tenemos tres secciones a destacar:
+		<ul>
+			<li> Barra de usuario: Permitirá loguearse si se navega de forma no identificada, o desloguarse en caso contrario. </li>
+			<li> Segunda barra superior: Contendrá el título de la página, el logotivo y una barra que enlaza a diferentes contenidos de la web, que serán los siguientes:
+				<ul>
+					<li> Juegos: Enlace al catálogo completo de juegos. </li>
+					<li> Foro: Enlace al foro de la página </li>
+					<li> Top juegos: Los juegos mejor valorados por los usuarios de cada género. Listados por orden de calificación. </li>
+					<li> Sube tu contenido: Enlace al formulario concreto para aportar contenido. </li>
+					<li> Quiénes somos: Página estática que hablará de nosotros y de nuestro proyecto. </li>
+					<li> Contacta: Formulario para contactar con nosotros </li>
+				</ul>
+			</li>
+			<li> Secciones destacadas: Tres secciones más grandes, que contendrán el contenido más destacado de cada una. Dichas secciones son:
+				<ul>
+					<li> Análisis: Análisis más destacados de los juegos más recientes. </li>
+					<li> Opiniones: Artículos de opinión mejor valorados de los juegos más recientes. </li>
+					<li> Últimos lanzamientos: Avances de los juegos que estén cerca de ser lanzados al mercado. </li>  
+				</ul>
+			</li>
+		</ul> 
+	</p>
 	<img src="PagPrincipal.jpg" WIDTH=400 HEIGHT=400>
 	
-	<p>Contacta: Contendria un formulario para contactar con nosotros</p>
-	<img src="Contacta.png" WIDTH=400 HEIGHT=400>
+	<h3> Contacta </h3>
+	<p>
+		Contendrá un formulario para contactar con nosotros. 
+	</p>
+	<img src="PagPrincipal.jpg" WIDTH=400 HEIGHT=400>
 	
-	<p>Foro: Es una sección para debatir diferentes temas, consta de una página principal, como la de la imágen y 
-	las secundarias serían similares pero sobre el tema al que hacen referencia.</p>
+	<h3> Foro </h3>
+	<p>
+		En la portada aparecerán los hilos con comentarios más recientes, nombre del hilo, quién ha iniciado el debate y quién ha sido el último en aportar un comentario, junto a la fecha y hora del mismo.
+	</p>
 	<img src="Foro.jpg" WIDTH=400 HEIGHT=400>
 	
-	<p>Top: Una lista con los videojuegos mejor valorados.</p>
+	<h3> Top juegos </h3>
+	<p>
+		Una lista con los videojuegos mejor valorados. Aparecerá un Top 5 por cada género.
+	</p>
 	<img src="MasValorados.jpg" WIDTH=400 HEIGHT=400>
 	
-	<p>Quienes Somos: Descripción de quienes son los creadores de la web, el motivo por el cual se crea la página y 
-	otra información relevante.</p>
+	<h3> Quiénes somos </h3>
+	<p>
+		Descripción de quiénes son los creadores de la web, el motivo por el cual se crea la página y otra información relevante.
+	</p>
 	<img src="QuienSomos.jpg" WIDTH=400 HEIGHT=400>
 	
-	<p>Subir Tu Contenido: Los usuarios podrán participar en el contenido de la web, estos podrán subir una noticia,
-	reportaje... y podrán valorar los de otros usuarios.
-	Los mejores serán subidos a la web para formar parte del contenido.</p>
+	<h3> Sube tu contenido </h3>
+	<p>
+		Los usuarios podrán participar en el contenido de la web. Podrán subir un análisis o un artículo de opinión, y podrán valorar el contenido de otros usuarios. Los que cumplan los requisitos serán subidos a la web para formar parte del contenido.
+	</p>
 	<img src="SubirTuContenido.jpg" WIDTH=400 HEIGHT=400>
 	
-	<p>Ultimos lanzamientos: Contendría el título y una breve descripción del contenido, este será un link a 
-	una página donde se encuentra el contenido completo.</p>
+	<h3> Últimos lanzamientos </h3>
+	<p>
+		Listado de los últimos videojuegos cercanos a salir. Aparece el título (linkado a la página donde puede verse un avance completo) y una breve descripción del contenido.
+	</p>
 	<img src="UltimosLanzamientos.jpg" WIDTH=400 HEIGHT=400>
-	<p>Usurarios: Panel informativo donde se puede observar los privilegios de cada tipo de usuario que hay en la web. </p>
+
+	<h3> Juegos </h3>
+	<p> 
+		El listado de juegos será completo, ordenado por orden alfabético y contendrá, para cada uno, su portada, género, consolas disponibles, fecha de lanzamiento, valoración media de los usuarios (si ya está en el mercado) y una breve sinopsis del mismo. Clickando en el nombre se enlazará a su página principal, detallada a continuación.
+	</p>
+	<p>
+		La página principal de un juego mostrará el contenido más destacado de cada tipo de artículo (mejores análisis y mejores opiniones). Después contendrá dos enlaces, uno para cada tipo de artículo, donde habrá una lista más extensa de cada contenido.
+	</p>
+
+	<h3> Análisis y opiniones </h3>
+	<p>
+		Son dos páginas independientes cuya estructura será idéntica: aparecerán los artículos más destacados en primer lugar, para después mostrar los últimos artículos aportados a la página.
+	</p>
+
+	<h3> Usuarios </h3>
+	<p>
+		Panel informativo donde se puede observar los privilegios de cada tipo de usuario que hay en la web. 
+	</p>
 	<img src="Usuarios.jpg" WIDTH=400 HEIGHT=400>
-	</body>
+</body>
+<footer>
+	Proyecto GTAW, de la asignatura AW del grado de Ingeniería Informática impartido en la UCM.
+</footer>
 </html>
