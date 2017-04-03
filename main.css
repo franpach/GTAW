@@ -1,0 +1,53 @@
+body{
+     width:100%;
+}
+img{
+    vertical-align: middle;
+}
+h2,input,p,textarea{
+	margin-left:400px;
+	width: 100%;
+	
+}
+h2,input{
+	margin-bottom: 25px;
+}
+input,textarea,#RellenarDes{
+    
+    border-radius:5px;
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,.8);
+    font:bold 12px Arial, Helvetica, sans-serif;
+    height: 24px;
+    line-height: 20px;
+    padding:0 2px;
+    width: 230px;
+}
+#page-wrapper{
+ 
+    /*background-color:#356AA0;*/
+    /*box-shadow: 0 0 0 9px rgba(128,0,0,.1);*/
+    /*Margen de sombra alrededor del contenedor 8px negro*/
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,.8);
+    /*Las 3 líneas siguientes, sirven para el borde redondeado
+     * pero para diferentes navegadores*/
+    -webkit-border-radius:5px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    margin-left:200px;
+    margin-right:100px;
+    padding-bottom:50px;
+
+
+}
+
+#submit2,#RellenarDes{
+	margin-left:200px;
+}
+#submit:active{
+	position: relative;
+	top: 3px;
+}
+#Infor{
+	height: 100px;
+	overflow: auto;
+}
