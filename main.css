@@ -5,7 +5,7 @@ img{
     vertical-align: middle;
 }
 h2,input,p,textarea{
-	margin-left:400px;
+	margin-left:200px;
 	width: 100%;
 	
 }
@@ -22,7 +22,7 @@ input,textarea,#RellenarDes{
     padding:0 2px;
     width: 230px;
 }
-#page-wrapper{
+#main{
  
     /*background-color:#356AA0;*/
     /*box-shadow: 0 0 0 9px rgba(128,0,0,.1);*/
@@ -33,10 +33,10 @@ input,textarea,#RellenarDes{
     -webkit-border-radius:5px;
     -moz-border-radius:10px;
     border-radius:10px;
-    margin-left:200px;
-    margin-right:100px;
     padding-bottom:50px;
-
+    width:700px;
+    margin-left:200px;
+    overflow:hidden;
 
 }
 
@@ -49,5 +49,5 @@ input,textarea,#RellenarDes{
 }
 #Infor{
 	height: 100px;
-	overflow: auto;
+	overflow: hidden;
 }

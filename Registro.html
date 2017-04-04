@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro</title>
+	<meta charset="utf-8">
+	<link rel ="stylesheet" href="main.css">
+
+	<script type="text/javascript">
+<!--
+/*
+ * Función para validar una dirección de correo
+ * Tiene que recibir el identificador del formulario
+ */
+function validateMail(idMail)
+{
+	//Creamos un objeto 
+	object=document.getElementById(idMail);
+	valueForm=object.value;
+ 
+	// Patron para el correo
+	var patron=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+	if(valueForm.search(patron)==0)
+	{
+		//Mail correcto
+		document.getElementById('Correcto').style.display = 'inline-block';
+		document.getElementById('Incorrecto').style.display = 'none';
+		object.style.color="#000";
+		return;
+	}
+	//Mail incorrecto
+	document.getElementById('Incorrecto').style.display = 'inline-block';
+	document.getElementById('Correcto').style.display = 'none';
+	object.style.color="#f00";
+}
+function validatePass(idPass1,idPass2)
+{
+	//Creamos un objeto 
+	object1=document.getElementById(idPass1);
+	object2=document.getElementById(idPass2);
+	valueForm1=object1.value;
+	valueForm2=object2.value;
+ 
+	// Patron para el correo
+	if(valueForm1==valueForm2)
+	{
+		//Mail correcto
+		document.getElementById('CorrectoContr').style.display = 'inline-block';
+		document.getElementById('IncorrectoContr').style.display = 'none';
+		object1.style.color="#000";
+		return;
+	}
+	//Mail incorrecto
+	document.getElementById('IncorrectoContr').style.display = 'inline-block';
+	document.getElementById('CorrectoContr').style.display = 'none';
+	object1.style.color="#f00";
+}
+//-->
+</script>
+</head>
+</head>
+<body>
+	<div id="main">
+		<header>
+			<h2>¡Únete, es gratis!</h2>
+		</header>
+		<div>
+			<form id="form_login" method="post" action="registro2.html">
+				<p> <label> Nombre </label></p>
+				<input type="text" name="Nombre" id="Nombre" value placeholder="Nombre">
+				<p> <label> Correo </label></p>
+				<input type="text" name="Correo" id="Correo" value placeholder="Correo" onKeyUp="javascript:validateMail('Correo')">
+				<img src="Approval-80.png" style="display:none;" id="Correcto" width="30px" height="30px"></img>
+				<img src="Close Window-80.png" style="display:none;" id="Incorrecto" width="30px" height="30px"></img>
+				<p> <label> Contraseña </label></p>
+				<input type="text" name="Contraseña" id="Contraseña" value placeholder="Contraseña">
+				<p> <label> Confirme su contraseña </label></p>
+				<input type="text" name="ContrConfirm" id="ContrConfirm" value placeholder="Contraseña" onKeyUp="javascript:validatePass('ContrConfirm','Contraseña')">
+				<img src="Approval-80.png" style="display:none;" id="CorrectoContr" width="30px" height="30px"></img>
+				<img src="Close Window-80.png" style="display:none;" id="IncorrectoContr" width="30px" height="30px"></img><br>
+				<input type="submit" id="submit" value="Hazte miembro">
+			</form>
+		</div>
+	</div>
+
+</body>
+
+</html>
