@@ -1,11 +1,13 @@
-body{
-     width:100%;
+*{
+    margin-left: auto;
+    margin-right: auto;
 }
+body{
+    text-align: center;}
 img{
     vertical-align: middle;
 }
 h2,input,p,textarea{
-	margin-left:200px;
 	width: 100%;
 	
 }
@@ -35,13 +37,12 @@ input,textarea,#RellenarDes{
     border-radius:10px;
     padding-bottom:50px;
     width:700px;
-    margin-left:200px;
     overflow:hidden;
 
 }
 
 #submit2,#RellenarDes{
-	margin-left:200px;
+position:relative;
 }
 #submit:active{
 	position: relative;
