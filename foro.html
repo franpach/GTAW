@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>Foro de GTAW</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+   
+    <link rel="stylesheet" href="bootstrap/css/foro.css" />
+    <link rel="stylesheet" href="bootstrap/css/header.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css" />
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="bootstrap/js/funcionalidad.js"></script>
+  </head>
+
+	<body>
+	<div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <div class="row">
+          <div class="col-lg-2">
+            <h3 class="text-muted">GTAW</h3>
+          </div>
+          <div class="col-lg-3 col-lg-offset-7">
+            <p class="perfil"><a href="miusuario.html">Ver mi perfil >></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-lg-offset-7">
+            <form>
+              <input type="search" name="search" value="Buscar...">
+              <button class="search" type="submit"><img src="img/search.png" width=19 height=19 alt="búsqueda"></button>
+            </form>
+          </div>
+          <div class="col-lg-2">
+            <p class="reg"><a href="login.html">Login</a> | <a href="registro.html">Regístrate</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-1">
+            <button class="navbar-toggle collapsed" type="button" data-target="#navbarCollapse" data-toggle="collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation </span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+          </div>
+        </div>
+        <div id="navbarCollapse" class="navbar-collapse collapse" aria-expanded="false" role="banner">
+          <ul class="nav nav-justified">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="acercade.html">Acerca de</a></li>
+            <li><a href="c0ntacto.html">Contacto</a></li>
+            <li><a href="juegos.html">Juegos</a></li>
+            <li class="active"><a href="foro.html">Foro</a></li>
+            <li class="dropdown"><a class="dropbtn">Top <span class="caret"></span></a>
+              <div class="dropdown-content">
+                <a href="topjuegos.html"> Top juegos </a>
+                <a href="topusers.html"> Top usuarios </a>
+              </div>
+            </li>
+            <li><a href="subetucontenido.html">Sube tu contenido</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row links">
+        <div class="col-lg-12">
+          <a href="main.html" >Inicio</a> > <a href="foro.html" >Foro</a> 
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h1> Foro </h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="lead">En este foro podrás discutir diversos temas relacionados con videojuegos con otros usuarios que sean miembros de la comunidad.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5">
+        <p><a class="btn btn-primary" href="subetucontenido.html" role="button" >Crear tema</a></p>
+      </div>
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Tema</th>
+          <th class=" text-center hidden-xs hidden-sm"></th>
+          <th class=" text-center ">Primer Post</th>
+          <th class=" text-center hidden-xs hidden-sm"></th>
+          <th class=" text-center hidden-xs hidden-sm">Último Post</th>
+          <th class="text-center">Respuestas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          
+          <td>
+            <h4><a href="mensaje.html">Tema de ejemplo 1</a></h4>
+          </td>
+          <td class="text-center hidden-xs hidden-sm"><img src="img/user.png" class ="user_img" alt="imagen de usuario no disponible"></td>
+          <td class="text-center ">por <a href="usuario.html">Usuario1</a><br> hace 3 días</td>
+          <td class="text-center hidden-xs hidden-sm"><img src="img/user.png" class ="user_img" alt="imagen de usuario no disponible"></td>
+          <td class="text-center hidden-xs hidden-sm">por <a href="usuario.html">Usuario2</a><br> hace 12 minutos</td>
+          <td class="text-center" ><a href="#">1</a></td>
+        </tr>
+        <tr>
+          <td>
+            <h4><a href="#">Tema de ejemplo 2</a></h4>
+          </td>
+          <td class="text-center hidden-xs hidden-sm"><img src="img/user.png" class ="user_img" alt="imagen de usuario no disponible"></td>
+          <td class="text-center ">por <a href="usuario.html">Usuario5</a><br> hace 5 días</td>
+          <td class="text-center hidden-xs hidden-sm"><img src="img/user.png" class ="user_img" alt="imagen de usuario no disponible"></td>
+          <td class="text-center hidden-xs hidden-sm">por <a href="usuario.html">Usuario3</a><br> hace 2 días</td>
+          <td  class="text-center"><a href="#">20</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <ul class="pagination  ">
+      <li ><a href="#">&laquo;</a></li>
+      <li class="active"><a href="#">1</a></li>
+      <li ><a href="#">2</a></li>
+      <li ><a href="#">3</a></li>
+      <li ><a href="#">4</a></li>
+      <li ><a href="#">5</a></li>
+      <li ><a href="#">&raquo;</a></li>
+    </ul>
+
+    <!-- Site footer -->
+      <footer class="footer">
+        <p>© 2016 GTAW, Inc. | Lee <a href="normas.html">aquí</a> nuestras normas</p>
+      </footer>
+ 
+</div>
+
+
+</body>
+</html>
